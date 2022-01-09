@@ -69,6 +69,7 @@ class ProductOption(models.Model):
     class Meta:
         db_table = 'product_options'
 
+# view table
 class ProductList(models.Model):
     category = models.ForeignKey(ProductCategory, on_delete=DO_NOTHING)
     subcategory = models.ForeignKey(ProductSubcategory, on_delete=DO_NOTHING)

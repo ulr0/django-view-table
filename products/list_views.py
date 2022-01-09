@@ -12,6 +12,7 @@ class ProductListView(View):
         offset = (page - 1) * PAGINATION_LIMIT
         limit = offset + PAGINATION_LIMIT
 
+        # view table 활용
         products = ProductList.objects.filter(product_name__icontains = search_word)
 
         product_lists = [
